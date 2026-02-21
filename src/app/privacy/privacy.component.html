@@ -1,104 +1,146 @@
-<div class="min-h-screen pt-24 pb-16 px-6">
-    <div class="max-w-3xl mx-auto">
-        <a routerLink="/" class="inline-block text-sm text-gray-600 hover:text-gray-900 mb-8 transition-colors">
-            ← Back to Home
+<div class="min-h-screen pt-24 pb-20 px-6">
+    <div class="max-w-2xl mx-auto">
+
+        <!-- Back link -->
+        <a routerLink="/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-800 mb-10 transition-colors group">
+            <svg class="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+            </svg>
+            Back to Home
         </a>
 
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Privacy Policy
-        </h1>
+        <!-- Header -->
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+        <div class="flex flex-wrap gap-2 mb-10">
+            <span class="text-xs font-medium bg-gray-100 text-gray-500 px-3 py-1 rounded-full">Last updated: February 2026</span>
+            <span class="text-xs font-medium bg-green-50 text-green-700 px-3 py-1 rounded-full">✓ No data collected</span>
+        </div>
 
-        <p class="text-sm text-gray-500 mb-12">
-            Last updated: February 2026
-        </p>
+        <!-- TL;DR box -->
+        <div class="bg-green-50 border border-green-100 rounded-2xl p-6 mb-12">
+            <p class="text-xs font-semibold uppercase tracking-wider text-green-600 mb-3">The short version</p>
+            <ul class="space-y-2.5 text-sm text-green-800">
+                <li class="flex items-start gap-2"><span class="font-bold mt-0.5">✓</span>CourtClash collects <strong>zero personal data</strong> — no name, email, or location.</li>
+                <li class="flex items-start gap-2"><span class="font-bold mt-0.5">✓</span>All match data stays <strong>on your device only</strong> — nothing is sent anywhere.</li>
+                <li class="flex items-start gap-2"><span class="font-bold mt-0.5">✓</span>No ads, no analytics, no third-party SDKs.</li>
+                <li class="flex items-start gap-2"><span class="font-bold mt-0.5">✓</span>Safe for users of all ages.</li>
+            </ul>
+        </div>
 
-        <div class="space-y-8 text-gray-700">
-            <!-- Introduction -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">1. Introduction</h2>
-                <p class="leading-relaxed">
+        <!-- Sections -->
+        <div class="divide-y divide-gray-100">
+
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-3">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">01</span>
+                    <h2 class="text-base font-semibold text-gray-900">Introduction</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 ml-9">
                     CourtClash is designed with privacy at its core. This Privacy Policy explains how we handle
                     information in connection with your use of the CourtClash mobile application.
                 </p>
             </section>
 
-            <!-- Information We Do Not Collect -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">2. Information We Do Not Collect</h2>
-                <p class="leading-relaxed mb-3">
-                    CourtClash does not collect, transmit, or store any personal information. Specifically, we do not
-                    collect:
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-3">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">02</span>
+                    <h2 class="text-base font-semibold text-gray-900">Information We Do Not Collect</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 mb-4 ml-9">
+                    CourtClash does not collect, transmit, or store any personal information. Specifically, we do not collect:
                 </p>
-                <ul class="list-disc list-inside space-y-2 ml-4">
-                    <li>Names, email addresses, or contact information</li>
-                    <li>Location data or device identifiers</li>
-                    <li>Usage data or analytics</li>
-                    <li>Advertising identifiers or tracking data</li>
-                    <li>Any other personal or non-personal information</li>
+                <ul class="ml-9 space-y-2">
+                    <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 flex-shrink-0"></span>Names, email addresses, or contact information
+                    </li>
+                    <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 flex-shrink-0"></span>Location data or device identifiers
+                    </li>
+                    <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 flex-shrink-0"></span>Usage data or analytics
+                    </li>
+                    <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 flex-shrink-0"></span>Advertising identifiers or tracking data
+                    </li>
+                    <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 flex-shrink-0"></span>Any other personal or non-personal information
+                    </li>
                 </ul>
             </section>
 
-            <!-- Local Data Storage -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">3. Local Data Storage</h2>
-                <p class="leading-relaxed">
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-3">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">03</span>
+                    <h2 class="text-base font-semibold text-gray-900">Local Data Storage</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 ml-9">
                     All data you create in CourtClash—including match records, player names, and statistics—is stored
                     locally on your device only. This data never leaves your device and is not transmitted to any server
-                    or third party. You retain full control over your data and can delete it at any time by removing the
-                    app.
+                    or third party. You retain full control over your data and can delete it at any time by removing the app.
                 </p>
             </section>
 
-            <!-- Third-Party Services -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">4. Third-Party Services</h2>
-                <p class="leading-relaxed">
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-3">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">04</span>
+                    <h2 class="text-base font-semibold text-gray-900">Third-Party Services</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 ml-9">
                     CourtClash does not integrate with any third-party services, analytics platforms, or advertising
                     networks. The app operates entirely offline and does not require an internet connection.
                 </p>
             </section>
 
-            <!-- Data Security -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">5. Data Security</h2>
-                <p class="leading-relaxed">
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-3">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">05</span>
+                    <h2 class="text-base font-semibold text-gray-900">Data Security</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 ml-9">
                     Since all data is stored locally on your device, the security of your information is protected by
                     your device's security features and your iOS device passcode or biometric authentication.
                 </p>
             </section>
 
-            <!-- Children's Privacy -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">6. Children's Privacy</h2>
-                <p class="leading-relaxed">
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-3">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">06</span>
+                    <h2 class="text-base font-semibold text-gray-900">Children's Privacy</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 ml-9">
                     CourtClash does not collect any information from anyone, including children under the age of 13.
                     The app is safe for users of all ages.
                 </p>
             </section>
 
-            <!-- Changes to This Policy -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">7. Changes to This Policy</h2>
-                <p class="leading-relaxed">
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-3">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">07</span>
+                    <h2 class="text-base font-semibold text-gray-900">Changes to This Policy</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 ml-9">
                     We may update this Privacy Policy from time to time. Any changes will be reflected by updating
                     the "Last updated" date at the top of this policy. Continued use of the app after any changes
                     constitutes acceptance of the updated policy.
                 </p>
             </section>
 
-            <!-- Contact Information -->
-            <section>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-3">8. Contact Information</h2>
-                <p class="leading-relaxed">
+            <section class="py-8">
+                <div class="flex items-baseline gap-4 mb-4">
+                    <span class="text-xs font-bold text-gray-300 tabular-nums w-5 flex-shrink-0">08</span>
+                    <h2 class="text-base font-semibold text-gray-900">Contact Information</h2>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 mb-5 ml-9">
                     If you have any questions about this Privacy Policy, please contact us at:
                 </p>
-                <p class="mt-3">
-                    <a href="mailto:support@ayushdev.com"
-                        class="text-gray-900 underline hover:no-underline font-medium">
+                <div class="ml-9 inline-flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5">
+                    <span class="text-base">✉️</span>
+                    <a href="mailto:support@ayushdev.com" class="text-sm font-medium text-gray-900 underline decoration-gray-300 hover:decoration-gray-900 transition-colors">
                         support&#64;ayushdev.com
                     </a>
-                </p>
+                </div>
             </section>
+
         </div>
     </div>
 </div>
